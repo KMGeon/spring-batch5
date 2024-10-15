@@ -18,9 +18,38 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    // Spring Boot 핵심 의존성
+    implementation 'org.springframework.boot:spring-boot-starter-batch'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // 데이터베이스 관련
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.3'
+
+    // 로깅 및 모니터링
+    implementation group: 'org.bgee.log4jdbc-log4j2', name: 'log4jdbc-log4j2-jdbc4.1', version: '1.16'
+    implementation 'io.micrometer:micrometer-registry-prometheus'
+
+    // 유틸리티 라이브러리
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    implementation 'org.modelmapper:modelmapper:3.1.1'
+
+    // 배치 및 스케줄링
+    implementation 'org.springframework.batch:spring-batch-integration:5.0.2'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+
+    // XML 처리
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:2.3.3'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:2.3.3'
+
+    // 테스트 관련
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.batch:spring-batch-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter-test:3.0.3'
+
+    implementation 'com.github.mwiede:jsch:0.2.17'
 }
 
 tasks.named('test') {

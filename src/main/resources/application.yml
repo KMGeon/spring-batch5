@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    jdbc-url: jdbc:mysql://localhost:3306/KMG?serverTimezone=Asia/Seoul
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  batch:
+    jdbc:
+      initialize-schema: always
+    job:
+      name: ${job.name:NONE}
+      enabled: true
