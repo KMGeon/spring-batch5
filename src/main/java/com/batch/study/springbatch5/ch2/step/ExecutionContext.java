@@ -24,7 +24,8 @@ public class ExecutionContext {
     @Bean
     public Job executionContextTestJob() {
         return new JobBuilder("executionContextTestJob", jobRepository)
-                .incrementer(new RunIdIncrementer())
+//                .incrementer(new RunIdIncrementer())
+                .preventRestart()
                 .start(step1())
                 .next(step2())
                 .next(step3())
