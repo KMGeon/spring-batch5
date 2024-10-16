@@ -15,15 +15,13 @@
 ---
 
 ### 1. 스프링 배치 5 소개
-- [1.1. 스프링 배치 5의 주요 변경사항](./docs/1.1-spring-batch-5-changes.md)
+- [1.1. 스프링 배치 5의 주요 변경사항](docs/1.스프링배치.md)
 
-### 2. 배치 도메인 이해
+### [2. 배치 도메인 이해](docs/2.배치도메인이해.md)
 - 2.1. Job
     - JobInstance
     - JobParameter
     - JobExecution
-    - JobRepository
-    - JobLauncher
 - 2.2. Step
     - StepExecution
     - StepContribution
