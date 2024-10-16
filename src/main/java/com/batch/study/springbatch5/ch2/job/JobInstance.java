@@ -24,12 +24,12 @@ public class JobInstance {
     @Bean
     public Job simpleJob2() throws Exception {
         return new JobBuilder("simpleJob2", jobRepository)
-                .start(simpleStep2())
+                .start(simpleStep_2())
                 .build();
     }
 
     @Bean
-    Step simpleStep2() {
+    Step simpleStep_2() {
         return new StepBuilder("simpleStep2", jobRepository)
                 .tasklet((contribution, chunkContext) -> {
                     log.info("step1 was excuted!");
