@@ -32,7 +32,7 @@
     - JobExecutionDecider
 - 2.4. Split과 멀티 스레드 처리
 
-### 3. Job, Step, Flow 구현
+### [3. Job, Step, Flow 구현](docs/3.Job,Step,Flow.md)
 - 3.1. Job 구성
 - 3.2. Step 구성
 - 3.3. Flow 구성
