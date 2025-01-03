@@ -1,4 +1,4 @@
-package com.batch.study.springbatch5.ch2.job;
+package com.batch.study.springbatch5.job;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
