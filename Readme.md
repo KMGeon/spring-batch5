@@ -1,7 +1,6 @@
 # 스프링 배치 5 (Spring Batch 5)
 
-## 목차
-
+### 목차
 1. [스프링 배치 5 소개](#1-스프링-배치-5-소개)
 2. [배치 도메인 이해](#2-배치-도메인-이해)
 3. [Job, Step, Flow 구현](#3-job-step-flow-구현)
@@ -9,10 +8,15 @@
 5. [반복 및 오류 제어](#5-반복-및-오류-제어)
 6. [멀티 스레드 프로세싱](#6-멀티-스레드-프로세싱)
 7. [이벤트 리스너](#7-이벤트-리스너)
-8. [테스트 및 운영](#8-테스트-및-운영)
+8. [배치 테스트 전략 및 운영](#8-테스트-및-운영)
 9. [스케줄러](#9-스케줄러)
 
 ---
+
+### Info
+1.  [스프링 배치 5.2.1](https://spring.io/projects/spring-batch)
+2. [기록보다 기억을](https://jojoldu.tistory.com/324)
+3. [배치 블로그](https://cheese10yun.github.io/spring-batch-basic)
 
 ### 1. 스프링 배치 5 소개
 - [1.1. 스프링 배치 5의 주요 변경사항](docs/1.스프링배치.md)
@@ -26,16 +30,17 @@
     - StepExecution
     - StepContribution
     - ExecutionContext
-- 2.3. Flow
-    - Status
-    - Transition (on, stop, fail, end, stopAndRestart)
-    - JobExecutionDecider
+
+[//]: # (todo : 작성하기)
 - 2.4. Split과 멀티 스레드 처리
 
 ### [3. Job, Step, Flow 구현](docs/3.Job,Step,Flow.md)
 - 3.1. Job 구성
 - 3.2. Step 구성
 - 3.3. Flow 구성
+    - Status
+    - Transition (on, stop, fail, end, stopAndRestart)
+    - JobExecutionDecider
 - 3.4. 스코프와 파라미터
     - @JobScope
     - @StepScope
